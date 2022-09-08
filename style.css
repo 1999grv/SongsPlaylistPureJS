@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+    background-image: url('landscape.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    background-color: black;
+    color: white;
+    height: 8vh;
+    padding: 1vh 1vw;
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding-right: 3vw;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img {
+    height: 4vh;
+    width: 3vw;
+    padding-right: 0.6vw;
+}
+
+.container {
+    max-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin: 3vh auto;
+    display: flex;
+    width: 70vw;
+    border-radius: 14px;
+    padding: 1vh 1vw;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    overflow: scroll;
+
+}
+
+.bottom {
+    background-color: black;
+    height: 10vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar {
+    width: 80vw;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.playIcon, .playSongIcon {
+    border-radius: 12px;
+    min-height: 3vh;
+    max-width: 2vw;
+}
+
+.speedIcon {
+    border-radius: 10px;
+    height: 3vh;
+    width: 3vw;
+}
+
+.playIcon, .speedIcon, .playSongIcon {
+    background-color: white;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.songItem {
+    border-radius: 16px;
+    min-height: 8vh;
+    background-color: white;
+    margin: 2vh 1vw;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width:30vw;
+}
+
+.songItem .songCover {
+    height: 8vh;
+}
+
+.songListPlay {
+    display: flex;
+    align-items: center;
+}
+
+.timeStamp {
+    margin-right: 1vw;
+}
+
+.gif-and-range {
+    display: flex;
+}
+
+.gif-and-range .playing {
+    height: 3vh;
+    width: 5vw;
+    margin-right: 2vw;
+}
+
+.song-name {
+    color: white;
+    width: 20vw;
+}
+
+.playing {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
